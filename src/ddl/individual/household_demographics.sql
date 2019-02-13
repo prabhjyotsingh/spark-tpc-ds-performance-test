@@ -8,7 +8,7 @@ create table household_demographics_text
     hd_vehicle_count          int
 )
 USING csv
-OPTIONS(header "false", delimiter "|", path "${TPCDS_GENDATA_DIR}/household_demographics")
+OPTIONS(header "false", delimiter "|", path "/tmp/tpcds1g/household_demographics")
 ;
 drop table if exists household_demographics;
 create table household_demographics

@@ -9,7 +9,7 @@ create table ship_mode_text
     sm_contract               string
 )
 USING csv
-OPTIONS(header "false", delimiter "|", path "${TPCDS_GENDATA_DIR}/ship_mode")
+OPTIONS(header "false", delimiter "|", path "/tmp/tpcds1g/ship_mode")
 ;
 drop table if exists ship_mode;
 create table ship_mode

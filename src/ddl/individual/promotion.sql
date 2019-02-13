@@ -21,7 +21,7 @@ create table promotion_text
     p_discount_active         string
 )
 USING csv
-OPTIONS(header "false", delimiter "|", path "${TPCDS_GENDATA_DIR}/promotion")
+OPTIONS(header "false", delimiter "|", path "/tmp/tpcds1g/promotion")
 ;
 drop table if exists promotion;
 create table promotion

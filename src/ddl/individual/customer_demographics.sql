@@ -12,7 +12,7 @@ create table customer_demographics_text
     cd_dep_college_count      int
 )
 USING csv
-OPTIONS(header "false", delimiter "|", path "${TPCDS_GENDATA_DIR}/customer_demographics")
+OPTIONS(header "false", delimiter "|", path "/tmp/tpcds1g/customer_demographics")
 ;
 drop table if exists customer_demographics;
 create table customer_demographics

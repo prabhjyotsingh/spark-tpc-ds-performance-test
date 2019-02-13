@@ -27,7 +27,7 @@ create table web_returns_text
     wr_net_loss               double
 )
 USING csv
-OPTIONS(header "false", delimiter "|", path "${TPCDS_GENDATA_DIR}/web_returns")
+OPTIONS(header "false", delimiter "|", path "/tmp/tpcds1g/web_returns")
 ;
 drop table if exists web_returns;
 create table web_returns

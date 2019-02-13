@@ -32,7 +32,7 @@ create table store_text
     s_tax_precentage          double
 )
 USING csv
-OPTIONS(header "false", delimiter "|", path "${TPCDS_GENDATA_DIR}/store")
+OPTIONS(header "false", delimiter "|", path "/tmp/tpcds1g/store")
 ;
 drop table if exists store;
 create table store 

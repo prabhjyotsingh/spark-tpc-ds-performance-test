@@ -23,7 +23,7 @@ create table store_returns_text
     sr_net_loss               double
 )
 USING csv
-OPTIONS(header "false", delimiter "|", path "${TPCDS_GENDATA_DIR}/store_returns")
+OPTIONS(header "false", delimiter "|", path "/tmp/tpcds1g/store_returns")
 ;
 drop table if exists store_returns;
 create table store_returns 

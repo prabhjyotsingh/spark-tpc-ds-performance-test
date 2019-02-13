@@ -12,7 +12,7 @@ create table catalog_page_text
     cp_type                   string
 )
 USING csv
-OPTIONS(header "false", delimiter "|", path "${TPCDS_GENDATA_DIR}/catalog_page")
+OPTIONS(header "false", delimiter "|", path "/tmp/tpcds1g/catalog_page")
 ;
 drop table if exists catalog_page;
 create table catalog_page

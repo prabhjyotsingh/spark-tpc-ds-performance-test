@@ -37,7 +37,7 @@ create table web_sales_text
     ws_net_profit             double
 )
 USING csv
-OPTIONS(header "false", delimiter "|", path "${TPCDS_GENDATA_DIR}/web_sales")
+OPTIONS(header "false", delimiter "|", path "/tmp/tpcds1g/web_sales")
 ;
 drop table if exists web_sales;
 create table web_sales

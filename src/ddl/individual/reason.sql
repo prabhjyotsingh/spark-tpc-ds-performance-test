@@ -6,7 +6,7 @@ create table reason_text
     r_reason_desc             string
 )
 USING csv
-OPTIONS(header "false", delimiter "|", path "${TPCDS_GENDATA_DIR}/reason")
+OPTIONS(header "false", delimiter "|", path "/tmp/tpcds1g/reason")
 ;
 drop table if exists reason;
 create table reason 

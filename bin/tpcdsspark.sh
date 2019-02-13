@@ -145,6 +145,9 @@ set_environment() {
   if [ -z "$TPCDS_GENDATA_DIR" ]; then
      TPCDS_GENDATA_DIR=${TPCDS_ROOT_DIR}/src/data
   fi  
+  echo "-------- $TPCDS_GENDATA_DIR -------i"
+
+
   if [ -z "$TPCDS_GEN_QUERIES_DIR" ]; then
      TPCDS_GENQUERIES_DIR=${TPCDS_ROOT_DIR}/src/queries
   fi  

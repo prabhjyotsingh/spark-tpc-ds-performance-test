@@ -17,7 +17,7 @@ create table warehouse_text
     w_gmt_offset              double
 )
 USING csv
-OPTIONS(header "false", delimiter "|", path "${TPCDS_GENDATA_DIR}/warehouse")
+OPTIONS(header "false", delimiter "|", path "/tmp/tpcds1g/warehouse")
 ;
 drop table if exists warehouse;
 create table warehouse

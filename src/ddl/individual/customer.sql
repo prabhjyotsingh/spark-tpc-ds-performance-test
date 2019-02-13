@@ -21,7 +21,7 @@ create table customer_text
     c_last_review_date        string
 )
 USING csv
-OPTIONS(header "false", delimiter "|", path "${TPCDS_GENDATA_DIR}/customer")
+OPTIONS(header "false", delimiter "|", path "/tmp/tpcds1g/customer")
 ;
 drop table if exists customer;
 create table customer

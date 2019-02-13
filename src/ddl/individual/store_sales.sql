@@ -26,7 +26,7 @@ create table store_sales_text
     ss_net_profit             double
 )
 USING csv
-OPTIONS(header "false", delimiter "|", path "${TPCDS_GENDATA_DIR}/store_sales")
+OPTIONS(header "false", delimiter "|", path "/tmp/tpcds1g/store_sales")
 ;
 drop table if exists store_sales;
 create table store_sales

@@ -13,7 +13,7 @@ create table time_dim_text
     t_meal_time               string
 )
 USING csv
-OPTIONS(header "false", delimiter "|", path "${TPCDS_GENDATA_DIR}/time_dim")
+OPTIONS(header "false", delimiter "|", path "/tmp/tpcds1g/time_dim")
 ;
 drop table if exists time_dim;
 create table time_dim

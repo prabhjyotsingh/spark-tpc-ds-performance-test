@@ -7,7 +7,7 @@
 # This is a mandatory parameter. Please provide the location of
 # spark installation.
 #######################################################################
-export SPARK_HOME=
+export SPARK_HOME=/usr/hdp/current/spark2-client/
 
 #######################################################################
 # Script environment parameters. When they are not set the script
